@@ -1,0 +1,86 @@
+/* homepage.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.6rem;
+  
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.HomePage {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.HomePage::before {
+  content: '';
+  background: url('./images/sunset.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  
+  z-index: -1;
+}
+
+.search {
+  margin-left: 7px;
+  
+  
+}
+
+.input {
+  margin-top: 7px;
+  text-align: center;
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 26px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8;
+
+}
+.weather-button {
+  display: inline-block;
+  margin-left: 7px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+  /* Add a subtle shadow on hover */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.weather-button:active {
+  background-color: #1f6eb2;
+  transform: translateY(1px);
+}
+.name {
+  margin-top: 10px;
+}
+.title {
+  display: flex;
+}
+.img {
+  margin-left: 12px;
+}

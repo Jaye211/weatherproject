@@ -1,0 +1,47 @@
+h1 {
+    
+    color: white;
+    font-weight: bolder;
+    
+    
+}
+
+span {
+
+    
+    padding: 1;
+    font-size: 0.5rem;
+    margin-top: 35px;
+    height: 24px;
+    border-radius: 18px;
+    background-color: green;
+    color: white;
+    
+}
+p {
+    margin-bottom: 24px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+}
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+  }
+  
+  .loading-circle {
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #fff; /* Loading circle color */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
